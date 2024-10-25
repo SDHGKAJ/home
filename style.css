@@ -1,0 +1,110 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+    color: white;
+    background-color: #121212; /* Optional for dark theme */
+} 
+
+.header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    
+    width: 100%;
+    padding: 20px;
+    background: transparent;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 100;
+    transition: background 0.3s ease; /* Smooth transition for background */
+}
+
+.header.scrolled {
+    background: rgba(0, 0, 0, 0.8); /* Dark background on scroll */
+}
+
+.header a {
+    text-decoration: none;
+    color: white;
+    font-size: large;
+}
+
+.header a:hover {
+    color: #00f7ff;
+}
+
+.navbar a {
+    color: white;
+    text-decoration: none;
+    margin-left: 15px;
+}
+
+.navbar a:hover {
+    color: #00f7ff; /* Optional hover color */
+    padding-top: 5px;
+    cursor: pointer;
+}
+
+.home {
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    background-image: url(images/mypiceee.jpg);
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    align-items: center;
+}
+
+.home-cont {
+    margin-left: 40px;
+    font-size: 25px;
+    color: white;
+}
+
+.footer {
+    background-color: grey;
+}
+
+.footer-container {
+    width: 100%;
+    padding: 70px 30px 20px;
+    text-align: center; /* Centers text and social items */
+}
+
+.contact-title {
+    color: white;
+    font-size: 1.5em;
+    margin-bottom: 20px; /* Adds spacing below Contact Me */
+}
+
+.socialItems {
+    display: flex;
+    justify-content: center;
+    padding: 10px;
+}
+
+.socialItems a {
+    margin: 0 10px;
+    padding: 10px;
+    border-radius: 50%;
+    transition: background-color 0.5s, color 0.5s;
+}
+
+.socialItems a i {
+    font-size: 2em;
+    color: white;
+    opacity: 0.9;
+}
+
+.socialItems a:hover {
+    color: white;
+    background-color: #111;
+}
+
